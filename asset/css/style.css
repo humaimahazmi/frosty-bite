@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --birutua: #29A4EB;
+    --biru: #93BFCF;
+    --birucerah: #8CE0FF;
+    --birumuda: #93BFCF;
+    --black: #1d1c1c;
+    --white: #fff;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3%;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    
+}
+
+.header .logo {
+    font-size: 2.3rem;
+    font-weight: bolder;
+    color: var(--birutua);
+   
+    align-items: center;
+   
+}
+
+.header .logo img {
+    height: 50px;
+    vertical-align: middle;
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Menyusun elemen secara vertikal di tengah */
+    justify-content: space-between; /* Menempatkan navbar dan search-container di kiri dan kanan */
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center; /* Menyusun item navbar secara vertikal di tengah */
+    margin-left: 80rem; /* Jarak antara navbar dan search */
+}
+
+.header .navbar a {
+    font-size: 1.2rem;
+    margin: 0 0.5rem; /* Mengurangi jarak antar item navbar */
+    color: var(--birutua);
+}
+
+.header .navbar a:hover {
+    color: var(--birumuda);
+}
+
+.search {
+    display: flex;
+    align-items: center; /* Menyusun input pencarian secara vertikal di tengah */
+}
+
+#searchInput {
+    padding: 10px 25px;
+    border-radius: 50px; /* Membuat bentuk oval */
+    border: 2px solid var(--birutua); /* Warna border biru */
+    background-color: var(--white);
+    font-size: 12px;
+    outline: none;
+    box-sizing: border-box;
+    max-width: 300px; /* Membatasi lebar maksimum input */
+}
+
+#searchInput::placeholder {
+    color: #888888; /* Warna placeholder abu-abu */
+    font-style: italic;
+}
+
+#searchInput:focus {
+    border-color: #0056b3; /* Border biru lebih gelap saat fokus */
+}
