@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frosty Bites</title>
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- custom css file link  -->
+<!-- Linking Google fonts for icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+<!-- Linking SwiperJS CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
@@ -20,12 +22,10 @@
         <div class="header-content">
             <nav class="navbar">
                 <a href="#home">Home</a>
-                <a href="#produk">Product</a>
+                <a href="product.html">Product</a>
                 <a href="#contact">Contact Us</a>
             </nav>
-            <div class="search">
-                <input type="text" id="searchInput" placeholder="Search here...">
-            </div>
+    
         </div>
     </header>
      <!-- header section ends -->
@@ -40,7 +40,7 @@
             <div class="text-effect">FROSTYBITE </div>
         </div>
         <div class="content">
-            <p>sebuah toko yang menjual berbagai makanan beku atau makanan cepat saji dengan kualitas terbaik, tidak hanya kualitasnya yang baik, kami juga menyediakan berbagai makanan beku dari berbagai merek, dan tentu saja harga yang kami tawarkan cukup terjangkau jika dibandingkan dengan harga pasar.</p>
+            <p></p>
         </div>
         </div> 
     </section>
@@ -49,41 +49,59 @@
   <section class="bestseller" id="bestseller">
 
     <h1 class="heading">Best Seller </h1>
-    <div class="box-container">
+    <div class="container swiper">
+        <div class="card-wrapper">
+          <!-- Card slides container -->
+          <ul class="card-list swiper-wrapper">
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img src="asset/image/best1.png" alt="" class="card-image">
+                <p class="badge badge-best1">TOP 1 WONDER NUGGETS</p>
+                <h1 class="card-title">Wonder Nuggets Rosemary Chicken adalah nuggets yang berbahan dasar daging ayam dan di padukan dengan cita rasa yang khas dari rosemary.</h1>
+               
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img src="asset/image/best2.png" alt="" class="card-image">
+                <p class="badge badge-best2">TOP 2 WONDER NUGGETS</p>
+                <h1 class="card-title">Wonder Nuggets Rosemary Chicken adalah nuggets yang berbahan dasar daging ayam dan di padukan dengan cita rasa yang khas dari rosemary.</h1>
+               
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img src="asset/image/best3.png" alt="" class="card-image">
+                <p class="badge badge-best3">TOP 3 WONDER NUGGETS</p>
+                <h1 class="card-title">Wonder Nuggets Rosemary Chicken adalah nuggets yang berbahan dasar daging ayam dan di padukan dengan cita rasa yang khas dari rosemary.</h1>
+               
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img src="asset/image/best4.png" alt="" class="card-image">
+                <p class="badge badge-best4">TOP 4 WONDER NUGGETS</p>
+                <h1 class="card-title">Wonder Nuggets Rosemary Chicken adalah nuggets yang berbahan dasar daging ayam dan di padukan dengan cita rasa yang khas dari rosemary.</h1>
+                
+              </a>
+            </li>
             
-        <div class="box">
-            <img src="asset/image/best1.png" alt="">
-            <h3>WONDER NUGGETS</h3>
-            <p>Wonder Nuggets Rosemary Chicken adalah nuggets yang berbahan dasar daging ayam dan di padukan dengan cita rasa yang khas dari rosemary. </p>
+          </ul>
+    
+           <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+    
+          <!-- Navigation Buttons -->
+          <div class="swiper-slide-button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
         </div>
-      
-           
-        <div class="box">
-            <img src="asset/image/best2.png" alt="">
-            <h3>WONDER NUGGETS</h3>
-            <p>Wonder Nuggets Paprika Chicken adalah nuggets yang berbahan dasar daging ayam dan dipadukan dengan cita rasa khas paprika yang sedikit pedas.</p>  
-        </div>
-      
-
-        <div class="box">
-            <img src="asset/image/best3.png" alt="">
-            <h3>WONDER NUGGETS</h3>
-            <p>Wonder Nuggets Minty Lentil Chicken adalah nuggets yang berbahan dasar daging ayam dan dipadukan dengan cita rasa khas dari kacang mint lentil (green lentil).</p>
-        </div>
-       
-           
-        <div class="box"> 
-            <img src="asset/image/best4.png" alt="">
-            <h3>WONDER NUGGETS</h3>
-            <p>Wonder Nuggets Turmeric Lentil Chicken adalah nuggets yang berbahan dasar daging ayam dan dipadukan dengan cita rasa original turmeric lentil yang authentic  berasal dari India.</p>
-            </div>
-        
-        </div>
+      </div>
     </section>
     <div class="footer">
       
     </div>
     <!-- best seller section ends -->
-    <script src="search.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="asset/js/script.js"></script>
 </body>
 </html>
