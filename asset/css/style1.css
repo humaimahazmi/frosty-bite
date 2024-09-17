@@ -124,8 +124,8 @@ body {
 }
 
 .text-effect {
-    font-size: 9.5rem; /* Ukuran teks */
-    color: white; /* Warna teks utama putih */
+    font-size: 9.5rem; 
+    color: white; 
     font-weight: bold;
     text-align: center;
     position: relative;
@@ -149,7 +149,7 @@ body {
 }
 
 
-  /* Mengatur gaya umum untuk section produk */
+  
 .product {
     font-family: 'Poppins', sans-serif;
     padding: 20px;
@@ -165,22 +165,22 @@ body {
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Mengatur gaya untuk kontainer produk */
+
 .products {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 kolom */
-    gap: 30px; /* Jarak antara produk */
-    justify-items: center; /* Memusatkan konten dalam kolom */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px; 
+    justify-items: center; 
     padding-bottom: 15rem;
 }
 
-/* Mengatur gaya untuk setiap produk */
+
 .Product {
     text-align: center;
-    background-color: #f8f8f8; /* Warna latar belakang produk */
+    background-color: #f8f8f8; 
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan produk */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     outline: .1rem solid rgba(0,0,0,.1);
     transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
@@ -191,7 +191,7 @@ body {
 
 .Product img {
     max-width: 43%;
-    height: auto; /* Menjaga rasio aspek gambar */
+    height: auto; 
     border-radius: 5px;
     padding-bottom: 1.5rem;
     transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
@@ -217,10 +217,6 @@ body {
 .d-none {
     display: none;
 }
-/* asset/css/style.css */
-
-
-
 .footer img {
     max-width: 100%; 
     height: auto; 

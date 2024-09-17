@@ -39,12 +39,12 @@ document.addEventListener("DOMContentLoaded", () => {
             if (index < text.length) {
                 element.innerHTML += text.charAt(index);
                 index++;
-                setTimeout(type, 50); // Kecepatan ketik
+                setTimeout(type, 50); 
             }
         }
         type();
     }
 
-    pElement.innerHTML = ''; // Hapus konten awal
+    pElement.innerHTML = ''; 
     typeEffect(text, pElement);
 });

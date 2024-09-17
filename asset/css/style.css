@@ -101,8 +101,8 @@ body {
 }
 
 .text-effect {
-    font-size: 9.5rem; /* Ukuran teks */
-    color: white; /* Warna teks utama putih */
+    font-size: 9.5rem; 
+    color: white; 
     font-weight: bold;
     text-align: center;
     position: relative;
@@ -133,7 +133,7 @@ body {
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    border-right: .15em solid var(--white); /* Garis blinking */
+    border-right: .15em solid var(--white);
     animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
   }
 
@@ -258,7 +258,7 @@ body {
     margin-top: -35px;
   }
   
-  /* Responsive media query code for small screens */
+  
   @media (max-width: 768px) {
     .card-wrapper {
       margin: 0 10px 25px;
